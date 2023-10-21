@@ -13,7 +13,9 @@ struct RecipesListView: View {
     var body: some View {
         List {
             ForEach(recipes) { recipe in
-                Text(recipe.mainInformation.name)
+                NavigationLink(recipe.mainInformation.name, destination: {
+                    RecipeDetailView(recipe: recipe)
+                })
             }
         }
         .navigationTitle(navigationTitle)
@@ -32,6 +34,7 @@ extension RecipesListView {
 }
 
 #Preview {
+    // NavigationView is needed to display the navigation title
     NavigationView {
         RecipesListView()
     }
