@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0731502AE49AEE005B16EE /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07314F2AE49AEE005B16EE /* AppColor.swift */; };
+		2B74818E2AE4BAFA0079EE62 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B74818D2AE4BAFA0079EE62 /* RecipeCategoryGridView.swift */; };
 		2BF8B4132AE3496000ABCEB2 /* CookcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8B4122AE3496000ABCEB2 /* CookcademyApp.swift */; };
 		2BF8B4152AE3496000ABCEB2 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8B4142AE3496000ABCEB2 /* RecipesListView.swift */; };
 		2BF8B4172AE3496100ABCEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF8B4162AE3496100ABCEB2 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B07314F2AE49AEE005B16EE /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		2B74818D2AE4BAFA0079EE62 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 		2BF8B40F2AE3496000ABCEB2 /* Cookcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF8B4122AE3496000ABCEB2 /* CookcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookcademyApp.swift; sourceTree = "<group>"; };
 		2BF8B4142AE3496000ABCEB2 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			children = (
 				2BF8B4142AE3496000ABCEB2 /* RecipesListView.swift */,
 				2BF8B4442AE48BCD00ABCEB2 /* RecipeDetailView.swift */,
+				2B74818D2AE4BAFA0079EE62 /* RecipeCategoryGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2BF8B4422AE47D4800ABCEB2 /* RecipeData.swift */,
+				2B07314F2AE49AEE005B16EE /* AppColor.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,9 +178,11 @@
 			files = (
 				2BF8B4212AE34D2900ABCEB2 /* Recipe.swift in Sources */,
 				2BF8B4452AE48BCD00ABCEB2 /* RecipeDetailView.swift in Sources */,
+				2B74818E2AE4BAFA0079EE62 /* RecipeCategoryGridView.swift in Sources */,
 				2BF8B4432AE47D4800ABCEB2 /* RecipeData.swift in Sources */,
 				2BF8B4152AE3496000ABCEB2 /* RecipesListView.swift in Sources */,
 				2BF8B4132AE3496000ABCEB2 /* CookcademyApp.swift in Sources */,
+				2B0731502AE49AEE005B16EE /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
