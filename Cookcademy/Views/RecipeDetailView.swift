@@ -56,8 +56,8 @@ struct RecipeDetailView: View {
 }
 
 #Preview {
-    // NavigationView is needed to display the navigation title
-    NavigationView {
+    // NavigationStack is needed to display the navigation title
+    NavigationStack {
         RecipeDetailView(recipe: Recipe.testRecipes[0])
     }
     
