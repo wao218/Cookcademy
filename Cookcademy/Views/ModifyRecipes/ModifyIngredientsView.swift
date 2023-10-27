@@ -45,15 +45,9 @@ struct ModifyIngredientsView: View {
     }
 }
 
-
-struct ModifyIngredientsView_Previews: PreviewProvider {
-    @State static var emptyIngredients = [Ingredient]()
-    
-    static var previews: some View {
-        NavigationStack {
-            ModifyIngredientsView(ingredients: $emptyIngredients)
-        }
+#Preview {
+    @State var emptyIngredients = [Ingredient]()
+    return NavigationStack {
+        ModifyIngredientsView(ingredients: $emptyIngredients)
     }
-    
-    
 }

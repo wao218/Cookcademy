@@ -41,11 +41,12 @@ struct ModifyMainInformationView: View {
     }
 }
 
-struct ModifyMainInformationView_Previews: PreviewProvider {
-    @State static var mainInformation =  MainInformation(name: "Test Name", description: "Test Description", author: "Test Author", category: .breakfast)
-    @State static var emptyInformation = MainInformation(name: "", description: "", author: "", category: .breakfast)
-    static var previews: some View {
-        ModifyMainInformationView(mainInformation: $mainInformation)
-        ModifyMainInformationView(mainInformation: $emptyInformation)
-    }
+#Preview("Filled In Info") {
+    @State var mainInformation =  MainInformation(name: "Test Name", description: "Test Description", author: "Test Author", category: .breakfast)
+    return ModifyMainInformationView(mainInformation: $mainInformation)
+}
+
+#Preview("Empty State") {
+    @State var emptyInformation = MainInformation(name: "", description: "", author: "", category: .breakfast)
+    return ModifyMainInformationView(mainInformation: $emptyInformation)
 }

@@ -61,13 +61,9 @@ extension NumberFormatter {
     }
 }
 
-struct ModifyIngredientView_Previews: PreviewProvider {
-    @State static var emptyIngredient = Ingredient()
-    
-    static var previews: some View {
-        ModifyIngredientView(ingredient: $emptyIngredient) { ingredient in
-               print(ingredient)
-        }
+#Preview {
+    @State var emptyIngredient = Ingredient()
+    return ModifyIngredientView(ingredient: $emptyIngredient) { ingredient in
+        print(ingredient)
     }
-    
 }

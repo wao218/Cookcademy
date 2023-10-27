@@ -40,11 +40,7 @@ struct ModifyRecipeView: View {
     }
 }
 
-// Need to use this preview stucture to add state variables to the preview
-struct ModifyRecipeView_Previews: PreviewProvider {
-    @State static var recipe = Recipe()
-    static var previews: some View {
-        ModifyRecipeView(recipe: $recipe)
-    }
-    
+#Preview {
+    @State var recipe = Recipe()
+    return ModifyRecipeView(recipe: $recipe)
 }
