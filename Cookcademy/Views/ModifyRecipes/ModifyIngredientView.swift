@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct ModifyIngredientView: View {
+struct ModifyIngredientView: ModifyComponentView {
     @Binding var ingredient: Ingredient
     let createAction: ((Ingredient) -> Void)
+    
+    init(component: Binding<Ingredient>, createAction: @escaping (Ingredient) -> Void) {
+        self._ingredient = component
+        self.createAction = createAction
+    }
     
     @Environment(\.dismiss) private var dismiss
     
@@ -63,7 +68,7 @@ extension NumberFormatter {
 
 #Preview {
     @State var emptyIngredient = Ingredient()
-    return ModifyIngredientView(ingredient: $emptyIngredient) { ingredient in
+    return ModifyIngredientView(component: $emptyIngredient) { ingredient in
         print(ingredient)
     }
 }
