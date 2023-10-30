@@ -15,6 +15,8 @@ struct RecipeDetailView: View {
     
     @State private var isPresenting = false
     
+    @EnvironmentObject private var recipeData: RecipeData
+    
     var body: some View {
         VStack {
             HStack {
@@ -85,6 +87,8 @@ struct RecipeDetailView: View {
                         }
                     }
                     .navigationTitle("Edit Recipe")
+            }.onDisappear {
+                recipeData.saveRecipes()
             }
         }
     }
